@@ -13123,7 +13123,8 @@ var elm$html$Html$Attributes$href = function (url) {
 		_VirtualDom_noJavaScriptUri(url));
 };
 var elm$html$Html$Attributes$rel = _VirtualDom_attribute('rel');
-var mdgriffith$elm_ui$Element$link = F2(
+var elm$html$Html$Attributes$target = elm$html$Html$Attributes$stringProperty('target');
+var mdgriffith$elm_ui$Element$newTabLink = F2(
 	function (attrs, _n0) {
 		var url = _n0.url;
 		var label = _n0.label;
@@ -13141,14 +13142,18 @@ var mdgriffith$elm_ui$Element$link = F2(
 						elm$html$Html$Attributes$rel('noopener noreferrer')),
 					A2(
 						elm$core$List$cons,
-						mdgriffith$elm_ui$Element$width(mdgriffith$elm_ui$Element$shrink),
+						mdgriffith$elm_ui$Internal$Model$Attr(
+							elm$html$Html$Attributes$target('_blank')),
 						A2(
 							elm$core$List$cons,
-							mdgriffith$elm_ui$Element$height(mdgriffith$elm_ui$Element$shrink),
+							mdgriffith$elm_ui$Element$width(mdgriffith$elm_ui$Element$shrink),
 							A2(
 								elm$core$List$cons,
-								mdgriffith$elm_ui$Internal$Model$htmlClass(mdgriffith$elm_ui$Internal$Style$classes.contentCenterX + (' ' + mdgriffith$elm_ui$Internal$Style$classes.contentCenterY)),
-								attrs))))),
+								mdgriffith$elm_ui$Element$height(mdgriffith$elm_ui$Element$shrink),
+								A2(
+									elm$core$List$cons,
+									mdgriffith$elm_ui$Internal$Model$htmlClass(mdgriffith$elm_ui$Internal$Style$classes.contentCenterX + (' ' + mdgriffith$elm_ui$Internal$Style$classes.contentCenterY)),
+									attrs)))))),
 			mdgriffith$elm_ui$Internal$Model$Unkeyed(
 				_List_fromArray(
 					[label])));
@@ -14058,9 +14063,9 @@ var author$project$Main$element_main = function (model) {
 				mdgriffith$elm_ui$Element$text('  '),
 				author$project$Main$displayAnnualMileageCalculations(
 				author$project$Main$annualMileageCalculations(model.allRecords)),
-				mdgriffith$elm_ui$Element$text('\n    HOW TO USE IT:\n\n    Gather receipts and service papers about you collected over time for your car.\n    For example: oil change receipts, smog check pappers, any mechanical services...etc...\n    Usually these papers have a date and the odometer mileage of your vehicule that day.\n    Just enter them, one by one. And the annual mileage estimate is calculated automatically.\n\n\n    ABOUT:\n    \n    This page helps you calculate easily some annual mileage estimates in order\n    to get a fair rate when you discuss with your car insurance.\n\n    Your annual mileage (rough estimates) is calculated automatically after\n    you enter dates and odometer readings at those dates, one reading at\n    a time (Please note that *no* information is collected).\n\n    Donations* (Bitcoin): 1PqVr7yDZskQr19KvS3QmDr8r8FKqKrYzd\n\n    Thank you !\n\n\n\n\n    *) If this page helped you save money with your car insurance,\n       please consider a donation in Bitcoin.\n\n    CONTACT:\n    For any questions or feedback, please refer to our contact page:'),
+				mdgriffith$elm_ui$Element$text('\n    HOW TO USE IT:\n\n    Gather receipts and service papers you have collected over time about your car.\n    For example: oil change receipts, smog check pappers, any mechanical services...etc...\n    Usually these papers have a date and the odometer mileage on that day reported on them.\n    Just enter them, one by one, in chronological order. And the annual mileage estimates\n    are calculated automatically.\n\n\n    ABOUT:\n    \n    This page helps you calculate easily some annual mileage estimates in order\n    to get a fair rate when you discuss with your car insurance.\n\n    Your annual mileage (rough estimates) is calculated automatically after\n    you enter dates and odometer readings at those dates, one reading at\n    a time (Please note that *no* information is collected).\n\n    Donations* (Bitcoin): 1PqVr7yDZskQr19KvS3QmDr8r8FKqKrYzd\n\n    Thank you !\n\n\n\n\n    *) If this page helped you save money with your car insurance,\n       please consider a donation in Bitcoin.\n\n    CONTACT:\n    For any questions or feedback, please refer to our contact page:'),
 				A2(
-				mdgriffith$elm_ui$Element$link,
+				mdgriffith$elm_ui$Element$newTabLink,
 				_List_Nil,
 				{
 					label: mdgriffith$elm_ui$Element$text('    www.pointblanklogic.com/contact.html'),
